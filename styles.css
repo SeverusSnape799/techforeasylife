@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020202;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+}
+
+.coming-soon {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 90px;
+    padding: 40px 50px;
+    color: #fff;
+    background-color: #00000083;
+    border-radius: 30px;
+    box-shadow: 0 6px 10px #0000005b;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #edd23957;
+}
+
+img.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    background-color: #53535344;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 7px #00000036;
+    backdrop-filter: blur(10px);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+li {
+    margin: 0 30px;
+}
+
+li.logo img {
+    height: 80px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.12s ease-out;
+}
+
+li a:hover {
+    color: #0790ba;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    position: relative;
+    display: flex;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjusted to account for header height */
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 20px; /* Added padding to lift content slightly */
+}
+
+.welcome-text {
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffffff57;
+    font-weight: 500;
+}
+
+.server-info {
+    font-size: 18px;
+    margin: 20px;
+    text-shadow: 0 0 8px #ffffff4d;
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.socials-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.socials-button.youtube {
+    background-color: #FF0000;
+    transition: all 0.1s ease;
+}
+
+.socials-button.youtube:hover {
+    box-shadow: 0 0 10px #c84646;
+    transition: all 0.1s ease;
+}
+
+.socials-button.instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    transition: all 0.1s ease;
+}
+
+.socials-button.instagram:hover {
+    box-shadow: 0 0 10px #df0768;
+    transition: all 0.1s ease;
+}
+
+.discord-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(background5.jpg);
+    background-size: cover;
+    filter: opacity(0.8);
+    z-index: -1;
+}
+
+.socials h2 {
+    font-weight: 500;
+    text-shadow: 0 0 8px #ffffff4d;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.tfp-banner {
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
